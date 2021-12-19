@@ -52,7 +52,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .headerhome{
-    width: 100%;
+    width: 1440px;
+    margin: auto;
 }
 .headerhome .container{
     max-width: 1200px;
@@ -381,7 +382,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 
 .hotels{
-    width: 100%;
+    width: 1440px;
+    margin: auto;
     padding-top: 90px;
 }
 .contentmain{
@@ -498,6 +500,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .tures{
     padding-top: 100px;
+    width: 1440px;
+    margin: auto;
 }
 .tures .lin{
     width: 340px;
@@ -622,7 +626,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .searchbox{
-    width: 100%;
+    width: 1440px;
+    margin: auto;
     margin-top: 60px;
 }
 .searchbox .block{
@@ -793,6 +798,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .blog{
     padding: 90px 0;
+    width: 1440px;
+    margin: auto;
 }
 .blog .contentmain .lin{
     width: 680px;
@@ -941,7 +948,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     color: white;
 }
 .WhyUs{
-    width: 100%;
+    width: 1440px;
+    margin: auto;
     padding: 90px 0;
 }
 .WhyUs h1{
@@ -1665,13 +1673,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .abbo{
     position: relative;
-    width: 1180px;
+    width: 1400px;
     margin: auto;
 }
 .advabout{
     position: absolute;
     top: -100px;
-    left: 0;
+    right: 6%;
     background: white;
     box-shadow: 0px 4px 30px 0px #00000012;
     margin: auto;
@@ -1773,7 +1781,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .footer{
-   
+    width: 1100px;
+    margin: auto;
     height: 370px;
     padding-top: 100px;
 }
