@@ -219,19 +219,31 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     background: red;
     opacity: 0;
     transition: opacity 1s;
+    background: white;
+}
+.nav ul li ul{
+    border: 1px solid #D0D0D0;
+    border-top: 3px solid #DD4053;
+}
+.nav ul li ul li{
+    border-bottom: 1px solid #D0D0D0;
+}
+.nav ul li ul li a{
+    width: 280px;
+    text-align: left;
+    padding: 10px 15px;
 }
 .nav a:hover:after{
     opacity: 1;
 }
 .nav a:hover{
-    color: blueviolet;
+    color: #DD4053;
 }
 .nav ul ul {
     display: none;
     position: absolute;
     text-align: center;
     background: white;
-    padding: 10px;
     z-index: 500;
 }
 .nav ul li:hover > ul{
@@ -265,6 +277,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     margin: auto;
     position: relative;
 }
+
 .contenthome{
     width: 1440px;
     background: url(./image/maxresdefault.png)center no-repeat ;
@@ -685,7 +698,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     margin-top: 93px;
     background: #F8F8F8;
     width: 1440px;
-    margin: 93px auto;
+    margin: auto;
     padding: 94px 0;
 
 }
@@ -841,9 +854,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     align-items: center;
 }
 .blog .title h1{
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 20px;
     margin: 10px 0 20px;
     width: 200px;
 }
@@ -950,7 +960,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .WhyUs{
     width: 1440px;
     margin: auto;
+    background: url('./image/world2.png')center no-repeat;
+    z-index: 10;
     padding: 90px 0;
+}
+.WhyUs .blocks{
 }
 .WhyUs h1{
     font-family: 'Montserrat';
@@ -971,6 +985,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+    background: white;
 }
 .WhyUs .block:nth-child(1){
     border-left: 6px solid #DD4053;
@@ -1042,8 +1057,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .offer img{
     position: absolute;
-    top: 80px;
-    right: 400px;
+    top: -40px;
+    right: 290px;
 }
 .countries{
     width: 1440px;
