@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Corinthia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
 *,*:before,*:after{
 	-moz-box-sizing: border-box;
@@ -50,13 +51,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     font-family: 'Lato', sans-serif;
     border-radius: 2px;
 }
-
+.site{
+    width: 100%;
+    margin: auto;
+}
 .headerhome{
     width: 1440px;
     margin: auto;
 }
 .headerhome .container{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
 }
 .header{
@@ -68,9 +72,20 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     align-items: center;
     justify-content: space-between;
     padding-bottom: 40px;
-    border-bottom: 2px solid #E2E2E2;
+    position: relative;
+}
+.nav1:after{
+    content: "";
+    display: block;
+    width: 111%;
+    height: 1px;
+    background: rgba(208, 208, 208, 1);
+    position: absolute;
+    bottom: 0;
+    left: -72px;
 }
 .nav1 > div{
+    
     border-right: 2px solid #E2E2E2;
     height: 40px;
     display: flex;
@@ -78,6 +93,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     justify-content: space-between;
     width: 100%;
 }
+
 .nav1 .language{
     display: flex;
     flex-direction: column;
@@ -107,13 +123,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     font-size: 18px;
     display: flex;
     justify-content: space-around;
-    
+    padding-right: 15px;
 }
 .nav1 .social i{
     padding-left: 18px;
     color: black;
 }
 .nav1 .numberphone{
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -177,6 +195,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     display: flex;
     padding-top: 20px;
 }
+
 .nav2 i{
     color: black;
     margin-left: 25px;
@@ -269,7 +288,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     content: "";
     transform: rotate(180deg);
 }
-
+.nav ul .small ul li a{
+    width: 150px;
+}
 
 .container{
     max-width: 1100px;
@@ -456,35 +477,52 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     background: #969696;
     color: white;
 }
-.hotels .images{
+.hotels .wrapper{
     width: 1440px;
     margin: auto;
+}
+.slider-container{
+    overflow: hidden;
+}
+.hotels .slider-track{
     padding-top: 50px;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    transition: 2s;
 }
-.hotels .imageblock{
-    width: 460px;
+.hotels .slider-item{
+    min-width: 460px;
     height: 450px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     position: relative;
+    transition: 2s;
+    margin-right: 30px;
 }
-.hotels .imageblock:nth-child(1){
+.hotels .slider-item:nth-child(1){
     background: url(./image/Port.png)center no-repeat;
     background-size: cover;
 }
-.hotels .imageblock:nth-child(2){
+.hotels .slider-item:nth-child(2){
     background: url(./image/Regent.png)center no-repeat;
     background-size: cover;
 }
-.hotels .imageblock:nth-child(3){
+.hotels .slider-item:nth-child(3){
     background: url(./image/Kiev.png)center no-repeat;
     background-size: cover;
 }
+.hotels .slider-item:nth-child(4){
+    background: url(./image/Kiev.png)center no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
 .place{
     position: absolute;
     top: 20px;
@@ -504,7 +542,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     color: #FFD600;
     font-size: 20px;
 }
-.hotels .imageblock .title h1{
+.hotels .slider-item .title h1{
     color: white;
     text-align: center;
     font-family: 'Montserrat';
@@ -606,7 +644,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .boxtures > a:nth-child(1){
     position: absolute;
-    top: 150px;
+    top: 220px;
     left: -60px;
     z-index: 10;
     display: block;
@@ -619,7 +657,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .boxtures > a:nth-child(2){
     position: absolute;
-    top: 150px;
+    top: 220px;
     right: -60px;
     z-index: 10;
     display: block;
@@ -642,6 +680,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     width: 1440px;
     margin: auto;
     margin-top: 60px;
+    margin-bottom: 93px;
 }
 .searchbox .block{
     width: 100%;
@@ -662,6 +701,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     color: #22222266;
     display: flex;
 }
+.searchbox .block .top{
+    margin-bottom: 10px;
+}
 .searchbox .block input{
     border: 1px solid #2E2E2E33;
     padding: 15px 20px;
@@ -678,7 +720,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     width: 160px;
 }
 .searchbox .button{
-    margin-top: 29px;
+    margin-top: 40px;
 }
 .searchbox .button a{
     background: #DD4053;
@@ -759,7 +801,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .boximage i{
     color: #BBBBBB;
-    font-size: 20px;
+    font-size: 16px;
 }
 .uptitle{
     display: flex;
@@ -929,9 +971,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     font-weight: 400;
     font-size: 16px;
 }
+
 .bottomsend .check{
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .bottomsend .check input{
     border: 1px solid white;
@@ -986,9 +1030,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     justify-content: space-between;
     margin-bottom: 30px;
     background: white;
+    border-left: 6px solid white;
+    transition: .5s;
 }
-.WhyUs .block:nth-child(1){
+.WhyUs .block:hover{
     border-left: 6px solid #DD4053;
+}
+.WhyUs .block:hover .checked{
+    border: 1px solid #DD4053;
+    background-color: #DD4053;
+    color: white;
 }
 .WhyUs .block h2{
     font-family: 'Montserrat';
@@ -1007,15 +1058,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     border: 1px solid #C6C6C6;
     height: 35px;
     text-align: center;
+    transition: .5s;
     
 }
 .WhyUs .block:nth-child(1) .checked{
-    border: 1px solid #DD4053;
-    background-color: #DD4053;
+    
 }
-.WhyUs .block:nth-child(1) .checked i{
-    color: white;
-}
+
 .offer{
     width: 1440px;
     margin: auto;
@@ -1147,11 +1196,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     line-height: 1.4;
     color: #252525;
 }
-.countries .bottom h1 span{
+.countries .bottom h1 a{
+    transition: .5s;
+    color: black;
+}
+.countries .bottom h1 a:hover{
     color: #DD4053;
     position: relative;
 }
-.countries .bottom h1 span:after{
+.countries .bottom h1 a:hover:after{
     content: "";
     display: block;
     width: 100%;
@@ -1235,11 +1288,25 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     right: -100px;
     z-index: 8;
 }
-.service .ellipse{
+.service .img{
     position: absolute;
     top: 50px;
     right: 50px;
-    z-index: 10;
+}
+.service img{
+    z-index: 50;
+    position: relative;
+}
+.service .imgg h2{
+    z-index: 50;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    transform: rotate(-25deg);
 }
 .service .sloveniafr{
     position: absolute;
@@ -1283,6 +1350,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     width: 450px;
     height: 70px;
     border-bottom: 1px solid #E3E3E3;
+    transition: .5s;
 }
 .levels .box h2{
     font-family: 'Montserrat';
@@ -1300,7 +1368,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     margin-left: 43px;
     line-height: 1.6;
 }
-.levels .boxes1 .box:nth-child(1){
+.levels .box:hover{
     border-bottom: 6px solid #DD4053;
 }
 
@@ -1443,8 +1511,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     color: #656565;
     line-height: 1.6;
 }
-
-
+.about .block:nth-child(5) h2{
+    width: 240px;
+}
+.about .block:nth-child(6) h2{
+    width: 327px;
+}
 
 .partner{
     width: 1440px;
@@ -1494,9 +1566,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     background: white;
     border-right: 1px solid #C4C4C480;
     display: flex;
+    border-top: 6px solid white;
+    transition: .5s;
+}
+.partner .block:hover{
+    border-top: 6px solid #DD4053;
 }
 .partner .block:nth-child(3){
-    border-top: 6px solid #DD4053;
+    
 }
 .partner .block img{
     margin: auto;
@@ -1548,11 +1625,22 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     top: 100px;
     left: -167px;
 }
-.uslovia .images img:nth-child(2){
+.uslovia .images .imgg img{
     position: absolute;
-    top: 200px;
-    left: -80px;
+    top: 220px;
+    left: -70px;
     z-index: 10;
+}
+.uslovia .imgg h2{
+    z-index: 50;
+    position: absolute;
+    bottom: 80px;
+    right:-35px;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+    transform: rotate(-25deg);
 }
 .uslovia .title{
 
@@ -1617,11 +1705,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     padding: 31px 16px 16px 31px;
     border: 1px solid #E3E3E3;
     position: relative;
+    transition: .5s;
 }
-.uslovia .box:nth-child(1){
+.uslovia .box:hover{
     border-top: 6px solid #DD4053;
     background: white;
     box-shadow: 0px 4px 20px 0px #00000012;
+}
+.uslovia .box:nth-child(1){
+    
 }
 .uslovia .box h1{
     font-family: 'Montserrat';
@@ -1723,8 +1815,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     padding: 15px;
     margin-right: 30px;
     background: white;
+    transition: .5s;
 }
-.blocks1 .block:nth-child(2) i{
+.abbo .block i:hover{
     color: #DD4053;
     border: 1px dashed #DD4053;
 }
@@ -1753,6 +1846,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     margin: auto;
     width: 1440px;
     background: #F8F8F8;
+    padding-bottom: 40px;
 }
 .subscribe .top {
     display: flex;
